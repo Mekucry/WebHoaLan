@@ -1,0 +1,225 @@
+#donhang{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    gap: 20px;
+}
+
+body h2{
+    font-family:'Courier New', Courier, monospace;
+    color: #dd7703;
+    font-weight:bolder;
+}
+
+.don{
+    background-color: rgba(0, 3, 202, 0.356);
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ttdon{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 70% 1fr;
+    margin-top: 10px;
+    border-bottom: 1px black solid;
+    width: 90%;
+    justify-self: center;
+    grid-template-areas: 
+    "1w 2w";
+}
+
+#trangthaihoanthanh{
+    color: green;
+    font-weight: bold;
+}
+
+#trangthaidanggiao{
+    color: yellow;
+    font-weight: bold;
+}
+
+#trangthaidahuy{
+    color: red;
+    font-weight: bold;
+}
+
+#tgdat{
+    grid-area: 1w;
+}
+
+#tongtien{
+    grid-area: 2w;
+}
+
+.ctdon{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30% 1fr 1fr;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    grid-template-areas: 
+    "1q 2q 3q";
+}
+
+#x{
+    align-self: center;
+    grid-area: 3q;
+    align-items: flex-start;
+    font-size: x-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+#ctdontenhoa{
+    font-size: large;
+}
+
+.ctdon img{
+    grid-area: 1q;
+    justify-self: center;
+}
+
+.ctdon div{
+    grid-area: 2q;
+    align-self: center;
+}
+
+#donhang img, #goiyhoa img{
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#goiyhoa{
+    margin-top: 30px;
+    justify-self: center;
+    gap: 30px;
+    width: 70%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+}
+
+.hoa{
+    display: grid;
+    background-color: rgba(0, 3, 202, 0.356);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: 240px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.hoa:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.hoa #tenhoa{
+    text-align: center;
+}
+
+.hoa img{
+    margin: 10px;
+    justify-self: center;
+}
+
+.hoa a{
+    justify-self: center;
+}
+
+#newdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform 0.1s;
+    transform: scale(0);
+}
+
+#newdiv a{
+    font-weight: bold
+}
+
+#chucnang button{
+    background-color: #dd7703;
+    color: white;
+    border-radius: 10px;
+    height: 25px;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+#chucnang button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#trong{
+    color: #dd7703;
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: bolder;
+    justify-self: center;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: rgba(0, 3, 202, 0.356);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#ttnh{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    border-top: 1px black solid;
+    width: 80%;
+    justify-self: center;
+}
+
+#ttnh #taito{
+    text-align: center;
+    color: #dd7703;
+    font-weight: bold;
+}
+
+#input{
+    margin-bottom: 10px;
+    justify-self: center;
+}
+
+#input input{
+    background-color: #dd7703;
+    color: white;
+    border-radius: 10px;
+    border: 1px white solid;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 5px;
+    height: 25px;
+}
+
+#input input:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#daban{
+    font-style: italic;
+    font-size: small;
+    justify-self: end;
+    margin-right: 10px;
+}

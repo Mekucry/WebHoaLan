@@ -1,0 +1,106 @@
+#formdk h1{
+    text-align: center;
+    border-bottom: 1px solid #dee0e4;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #dd7703;
+}
+
+#formdk{
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formdk ul, #formdk a{
+    align-self: flex-start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+.dangky {
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.dangky form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.dangky form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+}
+
+.dangky form input[type="password"], .dangky form input[type="text"] {
+    width: 300px;
+    height: 50px;
+    border: 2px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 3, 202, 0.356);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dangky form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #dd7703;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dangky form input[type="submit"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#newdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform 0.1s;
+    transform: scale(0);
+}
+
+#newdiv a{
+    font-weight: bold
+}
+
+#motrangdk{
+    color:#dd7703;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+#motrangdk:hover{
+    transform: scale(1.1);
+}

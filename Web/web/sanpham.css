@@ -1,0 +1,127 @@
+#sanpham{
+    width: 80%;
+    background-color: rgba(0, 3, 202, 0.356);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas: 
+    "ten ten"
+    "hinh gia"
+    "hinh tt"
+    "nut nut";
+}
+
+#sanpham h2{
+    font-family: 'Courier New', Courier, monospace;
+    grid-area: ten;
+    justify-self: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+#sanpham img{
+    grid-area: hinh;
+    margin: 20px;
+}
+
+#sanpham a{
+    grid-area: gia;
+    align-self: center;
+    margin-top: 40px;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 30px;
+    font-style: italic;
+}
+
+#sanpham pre{
+    overflow-x: auto;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#sanpham input{
+    grid-area: nut;
+    justify-self: center;
+    margin: 20px;
+    background-color: #dd7703;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#sanpham input:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#goiyhoa{
+    margin-top: 30px;
+    justify-self: center;
+    gap: 30px;
+    width: 70%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+}
+
+#sanpham img, #goiyhoa img{
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.hoa{
+    display: grid;
+    background-color: rgba(0, 3, 202, 0.356);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: 240px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.hoa:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.hoa #tenhoa{
+    text-align: center;
+}
+
+.hoa img{
+    margin: 10px;
+    justify-self: center;
+}
+
+.hoa a{
+    justify-self: center;
+}
+
+#newdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform 0.1s;
+    transform: scale(0);
+}
+
+#newdiv a{
+    font-weight: bold
+}
+
+#daban{
+    font-style: italic;
+    font-size: small;
+    justify-self: end;
+    margin-right: 10px;
+}

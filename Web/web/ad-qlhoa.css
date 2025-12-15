@@ -1,0 +1,284 @@
+#themhoa, #xemcthoa{
+    width: 700px;
+    height: 430px;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.2s;
+    transform: scale(0);
+    left:50%;
+    top:50%;
+    margin-left:-350px;
+    margin-top:-200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: fixed;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "them them"
+    "hinh thongtin"
+    "thongtinct thongtinct"
+    "nut nut";
+    gap: 0px;
+    background-color: white;
+}
+
+#qlhoa img, #xemcthoa img{
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#xemcthoa img{
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 30px;
+    grid-area: hinh;
+}
+
+#themanh{
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    margin-left: 20px;
+    grid-area: hinh;
+    align-items: center;
+}
+
+#themhoa #themanh{
+    width: 150px;
+}
+
+#themhoa #themten, #xemcthoa #themten{
+    background-color: white;
+    border: 2px solid rgba(0, 3, 202, 0.356);
+    width: 250px;
+    height: 120px;
+    border-radius: 10px;
+    grid-area: thongtin;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#xemcthoa #themten{
+    align-self: center;
+}
+
+#themhoa #themten{
+    height: 150px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+#themten p{
+    color: #dd7703;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#themten input{
+    width: 200px;
+    border-radius: 10px;
+    height: 30px;
+    margin: 0px;
+    align-self: center;
+    background-color: rgba(0, 3, 202, 0.356);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 2px solid #dee0e4;
+}
+
+#themhoa label {
+    font-weight: bold;
+    color: #dd7703;
+}
+
+#themten #giatien{
+    font-style: italic;
+    text-align: center;
+}
+
+#themhoa h2, #xemcthoa h2, h2{
+    margin-top: 10px;
+    grid-area: them;
+    height: 20px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    color: #dd7703;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+#themhoa button, #xemcthoa button{
+    grid-area: nut;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 80px;
+    justify-self: center;
+    margin-bottom: 10px;
+    background-color: #dd7703;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 25px;
+}
+
+#themhoa button{
+    margin-bottom: -80px;
+}
+
+#themhoa button:hover, #xemcthoa button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+#xemcthoa #thongtinct{
+    grid-area: thongtinct;
+    background-color: white;
+    border: 2px solid rgba(0, 3, 202, 0.356);
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 80%;
+    height: 100px;
+    margin-top: -10px;
+    justify-self: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    max-width: 100%; 
+    overflow-x: auto;
+}
+
+pre{
+    padding: 10px;
+}
+
+#thongtinct textarea{
+    position: absolute;
+    grid-area: thongtinct;
+    background-color: white;
+    border: 2px solid rgba(0, 3, 202, 0.356);
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 600px;
+    height: 90px;
+    margin-top: -60px;
+    justify-self: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+#qlhoa{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+#dshoa{ 
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    height: auto; 
+    margin-top: 15px;
+}
+
+#dshoa div{
+    height: 240px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "hinh78"
+    "thongtin";
+    background-color: rgba(0, 3, 202, 0.356);
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    justify-items: center;
+}
+
+#dshoa div:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#dshoa img{
+    max-height: 100px;
+    grid-area: hinh78;
+    margin-top: 20px;
+}
+
+#dshoa #tenhoa{
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    overflow-wrap: break-word;
+    margin-top: 20px;
+    font-size:medium;
+    font-weight: bold;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.giahoa{
+    color: #dd7703;
+    font-style: italic;
+    font-size: small;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#qlhoa button{
+    grid-area: nut;
+    background-color: #dd7703;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#qlhoa button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+#newdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    height: 125px;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform 0.1s;
+    transform: scale(0);
+}
+
+#newdiv a{
+    font-weight: bold
+}
+
+#daban{
+    font-style: italic;
+    font-size: small;
+    justify-self: end;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#imageUpload{
+    background-color: rgba(0, 3, 202, 0.356);
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+}

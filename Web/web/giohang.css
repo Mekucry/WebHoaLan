@@ -1,0 +1,258 @@
+#gh{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "1d 2d";
+    gap: 15px;
+}
+
+#giohang{
+    grid-area: 1d;
+    height: 500px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.hang{
+    display: grid;
+    background-color: rgba(0, 3, 202, 0.356);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr 20px;
+    grid-template-areas:
+    "anh ten sl check";
+}
+
+#daxoa{
+    display: grid;
+    background-color: rgba(0, 3, 202, 0.356);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr 0px;
+    grid-template-areas:
+    "anh ten sl check";
+}
+
+.ghtenhoa{
+    grid-area: ten;
+    align-self: center;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    grid-area: anh;
+    align-items: center;
+}
+
+.ghtenhoa a{
+    margin-left: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#hanggia{
+    font-size: medium;
+    font-style: italic;
+    font-weight:500;
+}
+
+.ghsoluong{
+    grid-area: sl;
+    align-self: center;
+}
+
+.ghsoluong button, #daxoa button{
+    background-color: #dd7703;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ghsoluong button:hover, #daxoa button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.ghsoluong a{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ghcheck{
+    grid-area: check;
+    align-self: center;
+}
+
+.ghcheck input[type="checkbox"]:checked{
+    background-color: #dd7703;
+}
+
+#daxoa .ghsoluong a{
+    text-align: center;
+    margin-top: -5px;
+    color: red;
+    display: inline-block;
+    font-weight: bold;
+    position: absolute;
+    margin-left: -40px;
+}
+
+#daxoa .ghsoluong button{
+    height: 25px;
+    align-self: center;
+}
+
+#tinhtiengh{
+    grid-area: 2d;
+    margin-right: 30px;
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px #dd7703 solid;
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tinhtiengh input{
+    border-radius: 5px;
+    margin-bottom: 15px;
+    height: 20px;
+    background-color: rgba(0, 3, 202, 0.356);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+
+#tinhtiengh label{
+    color: #dd7703;
+    font-style: italic;
+}
+
+#tinhtiengh form{
+    display: flex;
+    flex-direction: column;
+}
+
+#tinhtiengh p{
+    font-family:'Courier New', Courier, monospace;
+    color: #dd7703;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#tinhtiengh a{
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+}
+
+#tieude{
+    font-family:'Courier New', Courier, monospace;
+    color: #dd7703;
+}
+
+#ghdatmua{
+    height: 30px;
+    width: 120px;
+    background-color: #dd7703;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    justify-self: center;
+    margin-top: 30px;
+}
+
+#ghdatmua:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+#gh img, #goiyhoa img{
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#goiyhoa{
+    margin-top: 30px;
+    justify-items: center;
+    gap: 20px;
+    width: 70%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+}
+
+.hoa{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    border: black 2px solid;
+    border-radius: 10px;
+    width: 180px;
+    height: 230px;
+    grid-template-areas: 
+    "hinh"
+    "ten"
+    "nut";
+    background-color: rgba(0, 3, 202, 0.356);
+    transition: transform 0.15s ease;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.hoa:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.hoa #tenhoa{
+    text-align: center;
+}
+
+.hoa img{
+    margin: 10px;
+    grid-area: hinh;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    align-self: center;
+    margin-bottom: 25px;
+}
+
+#newdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    height: auto;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform 0.1s;
+    transform: scale(0);
+}
+
+#newdiv a{
+    font-weight: bold
+}
+
+#daban{
+    font-style: italic;
+    font-size: small;
+    justify-self: end;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
